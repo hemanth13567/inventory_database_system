@@ -13,6 +13,18 @@
 
 <img src="./resources/mermaid-diagram.svg">
 
+---
+
+## 📸 Screenshots
+
+![ware-house wise stock summery](<Screenshot 2026-03-28 122710.png>)
+
+![top 5 best-selling products](<Screenshot 2026-03-28 122627.png>)
+
+```
+warehouse wise stock summary quiery and top 5 best selling products. And their outputs in PgAdmin4 application
+```
+
 ## 📝 Description
 
 A robust, production-ready **Inventory Database System** built with PostgreSQL. Features a normalized 3NF relational schema with 11 tables, stored procedures for business logic, analytical queries for reporting, and comprehensive test data. Ideal for small-to-medium inventory management operations and demonstrating SQL proficiency for technical roles.
@@ -169,6 +181,8 @@ SELECT * FROM low_stock_alert;  -- (run full query from file)
 ---
 
 ## 📊 Sample Queries
+
+**Note: outputs are just samples not exact output**
 
 ### 1. Current Total Inventory Value
 
