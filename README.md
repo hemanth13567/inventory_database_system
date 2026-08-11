@@ -6,22 +6,24 @@
 
 ## 📊 ER Diagram
 
+![Database ER Diagram](./resources/mermaid-diagram.svg)
+
 ---
 
 ## 🎥 Demo Walkthrough
 
 A complete walkthrough of the newly updated frontend React Dashboard features and aesthetic enhancements is available below.
 
-<video src="resources/inventory-demo-video.mp4" controls="controls" width="100%">
+<video src="./resources/inventory-demo-video.mp4" controls="controls" width="100%">
 </video>
 
 ---
 
 ## 📸 Screenshots
 
-![ware-house wise stock summery](Screenshot%202026-03-28%20122710.png)
+![ware-house wise stock summery](resources/Screenshot%202026-03-28%20122710.png)
 
-![top 5 best-selling products](Screenshot%202026-03-28%20122627.png)
+![top 5 best-selling products](resources/Screenshot%202026-03-28%20122627.png)
 
 ```
 warehouse wise stock summary quiery and top 5 best selling products. And their outputs in PgAdmin4 application
@@ -29,26 +31,29 @@ warehouse wise stock summary quiery and top 5 best selling products. And their o
 
 ## 📝 Description
 
-A robust, production-ready **Inventory Database System** built with PostgreSQL. Features a normalized 3NF relational schema with 11 tables, stored procedures for business logic, analytical queries for reporting, and comprehensive test data. Ideal for small-to-medium inventory management operations and demonstrating SQL proficiency for technical roles.
+A robust, production-ready **Inventory Database System** with a modern full-stack administration dashboard. The backend is built with a normalized 3NF PostgreSQL relational schema (11 tables), stored procedures, and analytical queries. The frontend features a sleek Next.js React Dashboard styled with Tailwind CSS, Shadcn UI, and enriched with Framer Motion and GSAP animations for a premium user experience. Ideal for inventory management operations and demonstrating full-stack proficiency.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category           | Technology               |
-| ------------------ | ------------------------ |
-| **Database**       | PostgreSQL 14+           |
-| **Query Language** | SQL (PostgreSQL dialect) |
-| **Tools**          | pgAdmin, DBeaver, psql   |
+| Category           | Technology                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------- |
+| **Frontend**       | Next.js 16, React 19, TypeScript                                                                              |
+| **UI/UX**          | Tailwind CSS, Shadcn UI, Base UI, Recharts (Charts), Lucide (Icons)                                           |
+| **Animations**     | Framer Motion, GSAP, tw-animate-css                                                                           |
+| **Database**       | PostgreSQL 14+                                                                                                |
+| **Query Language** | SQL (PostgreSQL dialect)                                                                                      |
+| **Tools**          | pgAdmin, DBeaver, psql, Node.js                                                                               |
 
 ---
 
 ## ✨ Features
 
-- ✅ Designed relational schema with multiple tables and relationships (primary/foreign keys)
-- ✅ Wrote SQL queries with JOINs and aggregates to retrieve/analyze data
-- ✅ Implemented CRUD operations and basic stored procedures
-- ✅ Prepared test cases, executed manual tests, and resolved defects via root cause analysis
+- ✅ **Modern Admin Dashboard:** Beautiful Next.js React UI with premium aesthetics, responsive layout, and data visualization via Recharts.
+- ✅ **Rich Animations:** Smooth transitions and micro-interactions powered by Framer Motion and GSAP.
+- ✅ **Robust Database Schema:** Normalized 3NF design with 11 tables and relationships.
+- ✅ **Advanced SQL:** Complex analytical queries and procedural logic via Postgres Stored Procedures.
 
 ---
 
@@ -75,13 +80,14 @@ The system consists of **11 tables** following Third Normal Form (3NF):
 ## 📁 Files Structure
 
 ```
-
 Inventory_Database_System_2025/
-├── README.md # Project documentation
-├── schema.sql # Database schema (DDL)
-├── sample_data.sql # Sample test data
-├── procedures.sql # Stored procedures
-└── analytical_queries.sql # Analytical/reporting queries
+├── frontend/               # Next.js React Dashboard application
+├── resources/              # Media, images and videos
+├── README.md               # Project documentation
+├── schema.sql              # Database schema (DDL)
+├── sample_data.sql         # Sample test data
+├── procedures.sql          # Stored procedures
+└── analytical_queries.sql  # Analytical/reporting queries
 ```
 
 ---
@@ -127,6 +133,18 @@ psql -U postgres -d inventory_db -f analytical_queries.sql
 ```
 
 > **Tip:** In pgAdmin, right-click your database → _Restore_ → select each `.sql` file.
+
+### Step 4: Run the Frontend Dashboard
+
+Ensure you have Node.js installed, then start the Next.js development server:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Navigate to `http://localhost:3000` in your browser to view the administrative interface.
 
 ---
 
