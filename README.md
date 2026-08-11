@@ -2,24 +2,17 @@
 
 > 🎯 **Portfolio Project** — Built to demonstrate database design, SQL proficiency, and problem-solving skills for job applications.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge">
-</p>
-
 ---
 
 ## 📊 ER Diagram
-
-<img src="./resources/mermaid-diagram.svg">
 
 ---
 
 ## 📸 Screenshots
 
-![ware-house wise stock summery](<Screenshot 2026-03-28 122710.png>)
+![ware-house wise stock summery](Screenshot%202026-03-28%20122710.png)
 
-![top 5 best-selling products](<Screenshot 2026-03-28 122627.png>)
+![top 5 best-selling products](Screenshot%202026-03-28%20122627.png)
 
 ```
 warehouse wise stock summary quiery and top 5 best selling products. And their outputs in PgAdmin4 application
@@ -80,7 +73,6 @@ Inventory_Database_System_2025/
 ├── sample_data.sql # Sample test data
 ├── procedures.sql # Stored procedures
 └── analytical_queries.sql # Analytical/reporting queries
-
 ```
 
 ---
@@ -194,9 +186,10 @@ JOIN products p ON i.product_id = p.product_id;
 ```
 
 **Output:**
+
 | total_inventory_value |
-|----------------------|
-| 125,450.00 |
+| --------------------- |
+| 125,450.00            |
 
 ---
 
@@ -215,11 +208,12 @@ LIMIT 5;
 ```
 
 **Output:**
-| product_name | total_sold | revenue |
-|--------------|------------|---------|
-| USB-C Cable | 150 | 2,250.00|
-| Mouse Pad | 120 | 600.00 |
-| Keyboard | 85 | 8,500.00|
+
+| product_name | total_sold | revenue  |
+| ------------ | ---------- | -------- |
+| USB-C Cable  | 150        | 2,250.00 |
+| Mouse Pad    | 120        | 600.00   |
+| Keyboard     | 85         | 8,500.00 |
 
 ---
 
@@ -238,9 +232,10 @@ HAVING COALESCE(SUM(i.quantity), 0) < p.reorder_level;
 ```
 
 **Output:**
-| product_name | sku | reorder_level | current_stock |
-|--------------|-----|---------------|---------------|
-| HDMI Cable | HC-01 | 20 | 5 |
+
+| product_name | sku   | reorder_level | current_stock |
+| ------------ | ----- | ------------- | ------------- |
+| HDMI Cable   | HC-01 | 20            | 5             |
 
 ---
 
@@ -267,5 +262,3 @@ This project is licensed under the **MIT License**.
 > Full Stack Developer | SQL Enthusiast | Open Source Contributor
 
 ---
-
-<p align="center">⭐ Star this repo if you found it useful!</p>
