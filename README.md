@@ -14,13 +14,17 @@
 
 A complete walkthrough of the newly updated frontend React Dashboard features and aesthetic enhancements is available below.
 
-<video src="./resources/inventory-demo-video.mp4" controls="controls" width="100%">
+<video src="https://github.com/hemanth13567/inventory_database_system/raw/main/resources/inventory-demo-video.mp4" controls="controls" width="100%">
 </video>
 
 
 ---
 
 ## 📸 Screenshots
+
+![website preview](resources/preview1.png)
+
+![website preview 2](resources/preview2.png)
 
 ![ware-house wise stock summery](resources/Screenshot%202026-03-28%20122710.png)
 
