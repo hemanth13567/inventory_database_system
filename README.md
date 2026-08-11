@@ -17,6 +17,7 @@ A complete walkthrough of the newly updated frontend React Dashboard features an
 <video src="./resources/inventory-demo-video.mp4" controls="controls" width="100%">
 </video>
 
+
 ---
 
 ## 📸 Screenshots
